@@ -1,0 +1,153 @@
+bluetoothtest=/Users/wale/lvandroid/bluetoothtest CD=. filter="*" {
+ AndroidManifest.xml
+ Makefile
+ README.txt
+ build.xml
+ cscope.files
+ local.properties
+ proguard-project.txt
+ project.properties
+ assets=assets {
+ }
+ bin=bin {
+  AndroidManifest.xml
+  AndroidManifest.xml.d
+  bluetoothtest-debug-unaligned.apk
+  bluetoothtest-debug-unaligned.apk.d
+  bluetoothtest-debug.apk
+  bluetoothtest.ap_
+  bluetoothtest.ap_.d
+  build.prop
+  classes.dex
+  classes.dex.d
+  proguard.txt
+  classes=classes {
+   com=com {
+    example=example {
+     bluetoothtest=bluetoothtest {
+      Activity01.class
+      BuildConfig.class
+      ClientSocketActivity$1.class
+      ClientSocketActivity.class
+      DiscoveryActivity$1.class
+      DiscoveryActivity$2.class
+      DiscoveryActivity$3.class
+      DiscoveryActivity$4.class
+      DiscoveryActivity$5.class
+      DiscoveryActivity.class
+      OBEXActivity$1$1.class
+      OBEXActivity$1.class
+      OBEXActivity$2.class
+      OBEXActivity$3.class
+      OBEXActivity.class
+      R$attr.class
+      R$color.class
+      R$drawable.class
+      R$layout.class
+      R$string.class
+      R$style.class
+      R.class
+      SamplesUtils$1$1.class
+      SamplesUtils$1.class
+      SamplesUtils.class
+      ServerSocketActivity$1.class
+      ServerSocketActivity$2.class
+      ServerSocketActivity$3.class
+      ServerSocketActivity$4.class
+      ServerSocketActivity.class
+     }
+    }
+   }
+  }
+  dexedLibs=dexedLibs {
+  }
+  res=res {
+   drawable-hdpi=drawable-hdpi {
+    icon.png
+   }
+   drawable-ldpi=drawable-ldpi {
+    icon.png
+   }
+   drawable-mdpi=drawable-mdpi {
+    icon.png
+   }
+  }
+ }
+ docs=docs {
+  allclasses-frame.html
+  allclasses-noframe.html
+  constant-values.html
+  deprecated-list.html
+  index.html
+  overview-tree.html
+  package-list
+  stylesheet.css
+  example=example {
+   bluetooth=bluetooth {
+    demo=demo {
+     BTImageClient.html
+     BTImageServer.html
+     DemoMIDlet.html
+     GUIImageClient.html
+     GUIImageServer.html
+     package-frame.html
+     package-summary.html
+     package-tree.html
+    }
+   }
+  }
+  resources=resources {
+   inherit.gif
+  }
+ }
+ gen=gen {
+  R.java.d
+  com=com {
+   example=example {
+    bluetoothtest=bluetoothtest {
+     BuildConfig.java
+     R.java
+    }
+   }
+  }
+ }
+ libs=libs {
+ }
+ res=res {
+  drawable-hdpi=drawable-hdpi {
+   icon.png
+  }
+  drawable-ldpi=drawable-ldpi {
+   icon.png
+  }
+  drawable-mdpi=drawable-mdpi {
+   icon.png
+  }
+  layout=layout {
+   client_socket.xml
+   discovery.xml
+   main.xml
+   obex_server_socket.xml
+   server_socket.xml
+  }
+  values=values {
+   colors.xml
+   strings.xml
+   styles.xml
+  }
+ }
+ src=src {
+  com=com {
+   example=example {
+    bluetoothtest=bluetoothtest {
+     Activity01.java
+     ClientSocketActivity.java
+     DiscoveryActivity.java
+     OBEXActivity.java
+     SamplesUtils.java
+     ServerSocketActivity.java
+    }
+   }
+  }
+ }
+}

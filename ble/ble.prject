@@ -1,0 +1,146 @@
+ble=/Users/wale/lvandroid/ble CD=. filter="*" {
+ AndroidManifest.xml
+ Makefile
+ build.xml
+ cscope.files
+ ic_launcher-web.png
+ local.properties
+ proguard-project.txt
+ project.properties
+ bin=bin {
+  AndroidManifest.xml
+  AndroidManifest.xml.d
+  ble-debug-unaligned.apk
+  ble-debug-unaligned.apk.d
+  ble-debug.apk
+  ble.ap_
+  ble.ap_.d
+  build.prop
+  classes.dex
+  classes.dex.d
+  proguard.txt
+  classes=classes {
+   com=com {
+    example=example {
+     bluetooth=bluetooth {
+      le=le {
+       BluetoothLeService$1.class
+       BluetoothLeService$LocalBinder.class
+       BluetoothLeService.class
+       BuildConfig.class
+       DeviceControlActivity$1.class
+       DeviceControlActivity$2.class
+       DeviceControlActivity$3.class
+       DeviceControlActivity$4.class
+       DeviceControlActivity.class
+       DeviceScanActivity$1.class
+       DeviceScanActivity$2$1.class
+       DeviceScanActivity$2.class
+       DeviceScanActivity$LeDeviceListAdapter.class
+       DeviceScanActivity$ViewHolder.class
+       DeviceScanActivity.class
+       MainActivity.class
+       R$attr.class
+       R$dimen.class
+       R$drawable.class
+       R$id.class
+       R$layout.class
+       R$menu.class
+       R$string.class
+       R$style.class
+       R.class
+       SampleGattAttributes.class
+      }
+     }
+    }
+   }
+  }
+  dexedLibs=dexedLibs {
+  }
+  res=res {
+   drawable-hdpi=drawable-hdpi {
+    ic_launcher.png
+   }
+   drawable-mdpi=drawable-mdpi {
+    ic_launcher.png
+   }
+   drawable-xhdpi=drawable-xhdpi {
+    ic_launcher.png
+   }
+   drawable-xxhdpi=drawable-xxhdpi {
+    ic_launcher.png
+   }
+  }
+ }
+ gen=gen {
+  R.java.d
+  com=com {
+   example=example {
+    bluetooth=bluetooth {
+     le=le {
+      BuildConfig.java
+      R.java
+     }
+    }
+   }
+  }
+ }
+ libs=libs {
+ }
+ res=res {
+  drawable-hdpi=drawable-hdpi {
+   ic_launcher.png
+  }
+  drawable-mdpi=drawable-mdpi {
+   ic_launcher.png
+  }
+  drawable-xhdpi=drawable-xhdpi {
+   ic_launcher.png
+  }
+  drawable-xxhdpi=drawable-xxhdpi {
+   ic_launcher.png
+  }
+  layout=layout {
+   actionbar_indeterminate_progress.xml
+   activity_main.xml
+   gatt_services_characteristics.xml
+   listitem_device.xml
+  }
+  menu=menu {
+   gatt_services.xml
+   main.xml
+  }
+  values=values {
+   dimens.xml
+   strings.xml
+   styles.xml
+  }
+  values-sw600dp=values-sw600dp {
+   dimens.xml
+  }
+  values-sw720dp-land=values-sw720dp-land {
+   dimens.xml
+  }
+  values-v11=values-v11 {
+   styles.xml
+  }
+  values-v14=values-v14 {
+   styles.xml
+  }
+ }
+ src=src {
+  com=com {
+   example=example {
+    bluetooth=bluetooth {
+     le=le {
+      BluetoothLeService.java
+      DeviceControlActivity.java
+      DeviceScanActivity.java
+      MainActivity.java
+      SampleGattAttributes.java
+     }
+    }
+   }
+  }
+ }
+}

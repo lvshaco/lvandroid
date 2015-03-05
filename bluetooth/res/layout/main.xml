@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 线性布局，从上到下，方向由orientation的方向确定 fill_parent即填充其父控件，这里就是全屏。-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <!-- 如果在Java source code中对此widget有由代码，需提供id，andriod:id="@+id/<name>",在R.java上有对应的代码，对应为R.id.<name>, 在这个例子中我们在R.java中查到：R.id.myTextView=0x7f040000,我们可以通过name，在程序中对应这个空间。-->
+  <TextView  
+      android:id="@+id/myTextView" 
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content" 
+      android:text="@string/hello"
+      />
+  <!-- 增加一个新的控件button，Button：是widget的名字，如果我们定义我们自己的widget（是andriod.view.View的子类），我们需要给出完整的包路径，例如com.wei.andriod.MyWidget)。-->
+  <Button  
+      android:id="@+id/myButton" 
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content" 
+      />
+</LinearLayout>
+
+
