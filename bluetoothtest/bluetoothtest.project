@@ -1,4 +1,4 @@
-bluetoothtest=/Users/wale/lvandroid/bluetoothtest CD=. filter="*" {
+bluetoothtest=~/lvandroid/bluetoothtest CD=. filter="*" {
  AndroidManifest.xml
  Makefile
  README.txt
