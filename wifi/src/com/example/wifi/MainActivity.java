@@ -67,16 +67,16 @@ public class MainActivity extends Activity {
 
         wifimgr = (WifiManager) getSystemService(Context.WIFI_SERVICE);   
 
-        
+        WifiApProxy.init(wifimgr); 
         //通过按钮事件设置热点
         ui_open.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!WifiApProxy.isopened(wifimgr)) {
-                    WifiApProxy.open(wifimgr, "lvshaco001", "12345678");
+                if (!WifiApProxy.isopened()) {
+                    WifiApProxy.open("lvshaco001", "12345678");
                     ui_open.setText("close");
                 } else {
-                    WifiApProxy.close(wifimgr);
+                    WifiApProxy.close();
                     ui_open.setText("open");
                 }
             }
@@ -237,18 +237,24 @@ sb = new StringBuilder();
 
 // wifi热点代理
 class WifiApProxy {
-    public static void open(final WifiManager wifimgr, String ssid, String password) {
-        if (isopened(wifimgr))
+    private static WifiManager wifimgr;
+
+    public static void init(WifiManager wifimgr) {
+        WifiApProxy.wifimgr = wifimgr;
+    }
+
+    public static void open(String ssid, String password) {
+        if (isopened())
             return;
         if (wifimgr.isWifiEnabled()) {
             wifimgr.setWifiEnabled(false);
         }
-        forceopen(wifimgr, ssid, password);
+        forceopen(ssid, password);
         
         TimerChecker timer = new TimerChecker() {
             @Override
             protected void ontick() {
-                if (isopened(wifimgr)) {
+                if (isopened()) {
                     this.exit();
                 }
             }
@@ -256,13 +262,13 @@ class WifiApProxy {
         timer.start(1000, 15);
     }
 
-    public static void close(WifiManager wifimgr) {
-        if (isopened(wifimgr)) {
-            forceclose(wifimgr);
+    public static void close() {
+        if (isopened()) {
+            forceclose();
         }
     }
 
-    public static boolean isopened(WifiManager wifimgr) {  
+    public static boolean isopened() {  
         try {  
             Method method = wifimgr.getClass().getMethod("isWifiApEnabled");  
             method.setAccessible(true);  
@@ -275,7 +281,7 @@ class WifiApProxy {
         return false;  
     } 
 
-    private static void forceopen(WifiManager wifimgr, String ssid, String password) {  
+    private static void forceopen(String ssid, String password) {  
         try {  
             Method method1 = wifimgr.getClass().getMethod("setWifiApEnabled",  
                     WifiConfiguration.class, boolean.class);  
@@ -316,7 +322,7 @@ class WifiApProxy {
         }  
     }  
   
-    private static void forceclose(WifiManager wifimgr) {  
+    private static void forceclose() {  
         try {  
             Method method = wifimgr.getClass().getMethod("getWifiApConfiguration");  
             method.setAccessible(true);  

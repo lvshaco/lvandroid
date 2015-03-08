@@ -20,7 +20,7 @@ name=wifi
 default: dist
 	
 update:
-	$(ANDROID) update project -p . -n $(name) --target android-20
+	$(ANDROID) update project -p . -n $(name) --target android-9
 build:
 	ndk-build NDK_BUILD=1 #NDK_MODULE_PATH=`pwd`
 pack:
